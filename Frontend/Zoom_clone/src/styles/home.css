@@ -1,0 +1,254 @@
+/* ===========================
+   HOME PAGE
+=========================== */
+
+.homePage {
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navBar {
+    height: 72px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo svg {
+    color: #4f46e5;
+    font-size: 30px;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 1.7rem;
+    color: #111827;
+    font-weight: 700;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.historyBtn {
+    text-transform: none !important;
+    color: #374151 !important;
+    font-weight: 600 !important;
+}
+
+.logoutBtn {
+    text-transform: none !important;
+    border-radius: 10px !important;
+    background: #4f46e5 !important;
+    box-shadow: none !important;
+    padding: 8px 20px !important;
+}
+
+.logoutBtn:hover {
+    background: #4338ca !important;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.meetContainer {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 0 50px;
+}
+/* ===========================
+   LEFT PANEL
+=========================== */
+.leftPanel {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tag {
+    display: inline-block;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    margin-bottom: 24px;
+}
+
+.leftPanel h1 {
+    font-size: 3rem;
+    line-height: 1.25;
+
+    color: #111827;
+
+    margin: 18px 0 24px;
+}
+
+.heroText {
+    max-width: 520px;
+
+    color: #6b7280;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+/* ===========================
+   JOIN BOX
+=========================== */
+
+.joinBox {
+    width: 420px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.joinBox .MuiOutlinedInput-root {
+    border-radius: 10px;
+    background: white;
+}
+
+.joinBtn {
+    width: 180px;
+
+    height: 50px !important;
+
+    text-transform: none !important;
+
+    font-size: 16px !important;
+
+    border-radius: 10px !important;
+
+    box-shadow: none !important;
+}
+
+.joinBtn:hover {
+    background: #4338ca !important;
+}
+
+/* ===========================
+   RIGHT PANEL
+=========================== */
+
+.rightPanel {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightPanel img {
+    width: 430px;
+    height: auto;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+
+    .navBar {
+        padding: 0 20px;
+    }
+
+    .meetContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+
+        gap: 50px;
+
+        padding: 50px 25px;
+    }
+
+    .leftPanel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftPanel h1 {
+        font-size: 2.4rem;
+    }
+
+    .heroText {
+        max-width: 600px;
+        margin-bottom: 35px;
+    }
+
+    .joinBox {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .rightPanel img {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .leftPanel h1 {
+        font-size: 2rem;
+    }
+
+    .heroText {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .joinBox {
+        max-width: 100%;
+    }
+
+    .navRight {
+        gap: 8px;
+    }
+}
