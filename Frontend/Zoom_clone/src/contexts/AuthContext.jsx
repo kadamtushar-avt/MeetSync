@@ -3,14 +3,14 @@ import axios from "axios"
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import httpStatus from "http-status"
-
+import server from "../environment";
 
 
 //writing login and logout fuctions here
 export const AuthContext = createContext({});
 
 const client = axios.create({
-    baseURL:"http://localhost:8000/users"
+    baseURL:`${server}/users`
 })
 
 

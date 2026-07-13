@@ -15,10 +15,10 @@ import ChatIcon from '@mui/icons-material/Chat';
 import { useNavigate } from "react-router-dom";
 import PeopleIcon from '@mui/icons-material/People';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import server from "../environment";
 
 
-
-const server_url = "http://localhost:8000";
+const server_url = server;
 
 let connections = {};
 
